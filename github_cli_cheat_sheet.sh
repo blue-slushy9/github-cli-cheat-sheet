@@ -6,5 +6,5 @@ gh auth login
 # directory, --public can also be replaced with --private; 
 gh repo create <repo-name> -c --public --add-readme
 
-# Rename an existing GitHub repo;
-gh repo rename <current-name> <new-name>
+# Rename an existing GitHub repo---MAKE SURE THE LOCAL REPO OF THE TARGET IS YOUR WORKING DIRECTORY;
+gh repo rename <new-name>
