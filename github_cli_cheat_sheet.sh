@@ -5,3 +5,6 @@ gh auth login
 # Create a new public repo: -c clones a copy of the repo to the working
 # directory, --public can also be replaced with --private; 
 gh repo create <repo-name> -c --public --add-readme
+
+# Rename an existing GitHub repo;
+gh repo rename <current-name> <new-name>
