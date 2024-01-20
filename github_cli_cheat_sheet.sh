@@ -6,10 +6,15 @@ gh auth login
 # directory, --public can also be replaced with --private; 
 gh repo create <repo-name> -c --public --add-readme
 
-# Rename an existing GitHub repo---MAKE SURE THE LOCAL REPO OF THE TARGET IS YOUR WORKING DIRECTORY;
+# Rename a GitHub repo (it doesn't need to be your working directory with this command);
+# The -R switch specifies the current repo whereof the name you want to change;
+gh repo rename -R blue-slushy9/<current-repo-name> <new-repo-name>
+
+# Rename the existing GitHub repo that corresponds to your WORKING DIRECTORY;
+# Please note that this will NOT change the name of the local repo, ergo you will have to
+# change it with cmd/PS/bash, etc. or the GUI;
 gh repo rename <new-name>
 
 # View 100 latest GitHub repos (default is 30 with no arguments);
 gh repo list -L 100
 
-# 
