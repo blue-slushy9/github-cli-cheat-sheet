@@ -18,3 +18,6 @@ gh repo rename <new-name>
 # View 100 latest GitHub repos (default is 30 with no arguments);
 gh repo list -L 100
 
+# Delete a file from the remote repository;
+gh api -X DELETE -H "Accept: application/vnd.github.v3+json" -n DELETE_PATH /repos/:owner/:repo/contents/:path --field message="Delete file" --field sha=:sha
+
