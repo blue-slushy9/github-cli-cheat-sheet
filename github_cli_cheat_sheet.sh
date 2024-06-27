@@ -15,10 +15,6 @@ gh repo rename -R blue-slushy9/<current-repo-name> <new-repo-name>
 # change it with cmd/PS/bash, etc. or the GUI
 gh repo rename <new-name>
 
-# CREATE NEW BRANCH
-# Navigate to the local repo first, then run this command
-gh branch create <branch-name>
-
 # SUBMIT PULL REQUEST
 # Fork repo with GitHub CLI and create a clone of it in the working directory
 gh repo fork --clone somebody/their-repo
